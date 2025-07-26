@@ -351,6 +351,77 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Interactive Skill Meters */
+.skill-meter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.skill-meter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skill-meter:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.circular-progress {
+    transform: rotate(-90deg);
+    filter: drop-shadow(0 4px 8px rgba(0, 123, 255, 0.3));
+    transition: filter 0.3s ease;
+}
+
+.skill-meter:hover .circular-progress {
+    filter: drop-shadow(0 6px 12px rgba(0, 123, 255, 0.4));
+}
+
+.progress-bg {
+    stroke: #e9ecef;
+    stroke-linecap: round;
+}
+
+.progress-fill {
+    stroke: #007bff;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.skill-percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.skill-meter:hover .skill-percent {
+    color: #0056b3;
+}
+
+.skill-label {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c757d;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.skill-meter:hover .skill-label {
+    color: #495057;
+}
+
 .progress-item {
     margin-bottom: 1.5rem;
 }
@@ -578,6 +649,285 @@ section {
     font-weight: 500;
 }
 
+/* Project Placeholder */
+.project-placeholder {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-placeholder {
+    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+}
+
+/* Projects CTA Section */
+.projects-cta-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 4rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    margin-top: 3rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    color: #333;
+    text-align: center;
+}
+
+.projects-cta-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.projects-cta-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.3);
+}
+
+.projects-cta-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.projects-cta-section h4 {
+    color: #2c3e50 !important;
+    font-weight: 600;
+    font-size: 1.75rem;
+    display: block;
+    visibility: visible;
+}
+
+.projects-cta-section p {
+    color: #6c757d !important;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    display: block;
+    visibility: visible;
+}
+
+.projects-cta-section strong {
+    color: #495057 !important;
+    font-weight: 600;
+}
+
+.projects-cta-buttons {
+    margin-bottom: 2rem;
+}
+
+.projects-stats {
+    padding-top: 2rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.stat-item {
+    padding: 0 1rem;
+}
+
+.stat-number {
+    color: #007bff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure text visibility in projects CTA */
+.projects-cta-section * {
+    z-index: 1;
+    position: relative;
+}
+
+.projects-cta-section .text-muted {
+    color: #6c757d !important;
+}
+
+/* Certifications Section */
+.certification-category {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+}
+
+.certification-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-left: 4px solid #007bff;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover::before {
+    transform: scaleX(1);
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-left-color: #0056b3;
+}
+
+.certification-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.cert-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cert-logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+}
+
+.cert-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.cert-info {
+    flex: 1;
+}
+
+.cert-info h4 {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.cert-info h5 {
+    color: #007bff;
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.cert-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.cert-description {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.cert-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-badge {
+    background: #f8f9fa;
+    color: #495057;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.cert-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.cert-actions .btn {
+    font-size: 0.85rem;
+    padding: 0.375rem 0.75rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.cert-actions .btn:hover {
+    transform: translateY(-2px);
+}
+
 /* Skills Section */
 .skill-category {
     background: #ffffff;
@@ -721,6 +1071,19 @@ footer {
         justify-content: center;
     }
     
+    .skill-meter-container {
+        gap: 1.5rem;
+    }
+    
+    .skill-meter .circular-progress {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .skill-meter .skill-percent {
+        font-size: 1rem;
+    }
+    
     section {
         padding: 60px 0;
     }
@@ -751,6 +1114,52 @@ footer {
     
     .skill-category {
         padding: 2rem 1.5rem;
+    }
+    
+    .skill-meter-container {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skill-meter .circular-progress {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .skill-meter .skill-percent {
+        font-size: 0.9rem;
+    }
+    
+    .skill-meter .skill-label {
+        font-size: 0.8rem;
+    }
+    
+    .certification-card {
+        padding: 1.5rem;
+    }
+    
+    .cert-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .cert-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .cert-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .cert-actions .btn {
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .category-title {
+        font-size: 1.3rem;
     }
 }
 
@@ -944,6 +1353,39 @@ footer {
     color: #f0f6fc;
 }
 
+/* Dark Theme - Skill Meters */
+.dark-theme .progress-bg {
+    stroke: #30363d;
+}
+
+.dark-theme .progress-fill {
+    stroke: #58a6ff;
+}
+
+.dark-theme .skill-percent {
+    color: #58a6ff;
+}
+
+.dark-theme .skill-meter:hover .skill-percent {
+    color: #1f6feb;
+}
+
+.dark-theme .skill-label {
+    color: #8b949e;
+}
+
+.dark-theme .skill-meter:hover .skill-label {
+    color: #e6edf3;
+}
+
+.dark-theme .circular-progress {
+    filter: drop-shadow(0 4px 8px rgba(88, 166, 255, 0.3));
+}
+
+.dark-theme .skill-meter:hover .circular-progress {
+    filter: drop-shadow(0 6px 12px rgba(88, 166, 255, 0.4));
+}
+
 .dark-theme .progress {
     background-color: #30363d;
 }
@@ -1032,6 +1474,152 @@ footer {
 .dark-theme .tech-tag {
     background: rgba(88, 166, 255, 0.1);
     color: #58a6ff;
+}
+
+/* Dark Theme - Project Placeholder */
+.dark-theme .project-placeholder {
+    background: linear-gradient(135deg, #21262d 0%, #161b22 100%);
+}
+
+.dark-theme .project-card:hover .project-placeholder {
+    background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+}
+
+/* Dark Theme - Projects CTA Section */
+.dark-theme .projects-cta-section {
+    background: linear-gradient(135deg, #21262d 0%, #161b22 100%);
+    border-color: #30363d;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    color: #f0f6fc;
+}
+
+.dark-theme .projects-cta-section:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme .projects-cta-icon {
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+    box-shadow: 0 8px 30px rgba(88, 166, 255, 0.3);
+}
+
+.dark-theme .projects-cta-section h4 {
+    color: #f0f6fc !important;
+    display: block;
+    visibility: visible;
+}
+
+.dark-theme .projects-cta-section p {
+    color: #8b949e !important;
+    display: block;
+    visibility: visible;
+}
+
+.dark-theme .projects-cta-section strong {
+    color: #e6edf3 !important;
+    font-weight: 600;
+}
+
+.dark-theme .projects-stats {
+    border-top-color: #30363d;
+}
+
+.dark-theme .stat-number {
+    color: #58a6ff;
+}
+
+.dark-theme .stat-label {
+    color: #8b949e;
+}
+
+/* Dark theme text visibility fixes */
+.dark-theme .projects-cta-section .text-muted {
+    color: #8b949e !important;
+}
+
+.dark-theme .projects-cta-section * {
+    z-index: 1;
+    position: relative;
+}
+
+/* Dark Theme - Certifications */
+.dark-theme .category-title {
+    color: #f0f6fc;
+    border-bottom-color: #58a6ff;
+}
+
+.dark-theme .certification-card {
+    background: #21262d;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.4);
+    border-left-color: #58a6ff;
+}
+
+.dark-theme .certification-card::before {
+    background: linear-gradient(90deg, #58a6ff, #1f6feb);
+}
+
+.dark-theme .certification-card:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    border-left-color: #1f6feb;
+}
+
+.dark-theme .cert-logo {
+    background: #30363d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .cert-logo:hover {
+    box-shadow: 0 4px 15px rgba(88, 166, 255, 0.3);
+}
+
+.dark-theme .cert-icon {
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+}
+
+.dark-theme .cert-info h4 {
+    color: #f0f6fc;
+}
+
+.dark-theme .cert-info h5 {
+    color: #58a6ff;
+}
+
+.dark-theme .cert-date,
+.dark-theme .cert-description {
+    color: #8b949e;
+}
+
+.dark-theme .skill-badge {
+    background: #30363d;
+    color: #e6edf3;
+    border-color: #30363d;
+}
+
+.dark-theme .skill-badge:hover {
+    background: #58a6ff;
+    color: white;
+    border-color: #58a6ff;
+}
+
+.dark-theme .cert-actions .btn-outline-primary {
+    border-color: #58a6ff;
+    color: #58a6ff;
+}
+
+.dark-theme .cert-actions .btn-outline-primary:hover {
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+    color: white;
+}
+
+.dark-theme .cert-actions .btn-outline-secondary {
+    border-color: #8b949e;
+    color: #8b949e;
+}
+
+.dark-theme .cert-actions .btn-outline-secondary:hover {
+    background-color: #8b949e;
+    border-color: #8b949e;
+    color: #0d1117;
 }
 
 /* Dark Theme - Skills */
