@@ -1684,3 +1684,166 @@ footer {
         margin-top: 1rem;
     }
 }
+
+/* Profile Links Grid */
+.profiles-grid {
+    margin: 2rem 0;
+}
+
+.profile-link {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    color: inherit;
+}
+
+.profile-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: inherit;
+}
+
+.profile-logo-container {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.profile-logo-container img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+/* Specific styling for logos that need better contrast */
+.google img {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.profile-link:hover .profile-logo-container {
+    transform: scale(1.1);
+}
+
+.profile-link h5 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.profile-link p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Platform-specific colors */
+.github {
+    background: linear-gradient(135deg, #333 0%, #24292e 100%);
+}
+
+.linkedin {
+    background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+}
+
+.hackerrank {
+    background: linear-gradient(135deg, #00ea64 0%, #00c853 100%);
+}
+
+.credly {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+}
+
+.cisco {
+    background: linear-gradient(135deg, #1ba0d7 0%, #0d5ba6 100%);
+}
+
+.mongodb {
+    background: linear-gradient(135deg, #4db33d 0%, #3f9a2f 100%);
+}
+
+.coursera {
+    background: linear-gradient(135deg, #0056d3 0%, #003d99 100%);
+}
+
+.ibm {
+    background: linear-gradient(135deg, #1261ff 0%, #0f4ccc 100%);
+}
+
+.google {
+    background: linear-gradient(135deg, #4285f4 0%, #3367d6 100%);
+}
+
+.email {
+    background: linear-gradient(135deg, #ea4335 0%, #d23f31 100%);
+}
+
+.resume {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+/* Dark Theme - Profile Links */
+.dark-theme .profile-link {
+    background: #21262d;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .profile-link:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.dark-theme .profile-link h5 {
+    color: #f0f6fc;
+}
+
+.dark-theme .profile-link p {
+    color: #8b949e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-logo-container {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .profile-logo-container img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .google img {
+        padding: 8px;
+        border-radius: 12px;
+    }
+    
+    .profile-link {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .profile-link h5 {
+        font-size: 1rem;
+    }
+    
+    .profile-link p {
+        font-size: 0.8rem;
+    }
+}
