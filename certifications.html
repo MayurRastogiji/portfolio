@@ -68,346 +68,617 @@
     </nav>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="py-5 bg-light" style="margin-top: 80px;">
+    <section id="certifications" class="py-5 bg-light" style="padding-top: 120px !important;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="section-title text-center mb-5" data-aos="fade-up">Certifications & Achievements</h2>
+                    <h2 class="section-title text-center mb-5" data-aos="fade-up">Certification Categories</h2>
                 </div>
             </div>
+            <!-- Category Navigation -->
+            <div class="row mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="project-categories text-center">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                            <button class="btn btn-outline-primary category-btn active" data-category="all">
+                                <i class="fas fa-th me-2"></i>All Certificates
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="python">
+                                <i class="fab fa-python me-2"></i>Python
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="data">
+                                <i class="fas fa-database me-2"></i>Data Science
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="cyber">
+                                <i class="fas fa-shield-alt me-2"></i>Cyber Security
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="database">
+                                <i class="fas fa-database me-2"></i>Database
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="cloud">
+                                <i class="fas fa-cloud me-2"></i>Cloud
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="other">
+                                <i class="fas fa-certificate me-2"></i>Other
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Certifications Grid -->
+            <div class="row" id="certifications-grid">
+                <!-- Data Science Methodology -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="data" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Data_Science/Data-Science-Methodology.png" alt="IBM Data Science" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <!-- <div class="project-category-badge">Data Science</div> -->
+                            <h4>Data Science Methodology</h4>
+                            <!-- <img src="certifications/logos/IBM-Symbol.jpg" alt="Data Science Methodology" class="cert-logo"> -->
+                            <p>Completed IBM's Data Science Methodology course, covering data analysis, visualization, and machine learning concepts.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/UDYNGW4ZWU64" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Networking & Security -->
-            <div class="certification-category mb-5" data-aos="fade-up">
-                <h3 class="category-title">
-                    <i class="fas fa-shield-alt me-2"></i>Networking & Security
-                </h3>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/ethical-hacker.png" alt="CISCO Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Ethical Hacker</h4>
-                                    <h5 class="text-primary">CISCO</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">In-depth training on ethical hacking techniques, covering cybersecurity fundamentals, vulnerability assessment, penetration testing, and secure network practices.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Footprinting & Reconnaissance</span>
-                                <span class="skill-badge">Penetration Testing Basics</span>
-                                <span class="skill-badge">Ethical Hacking Tools</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/Ethical_hacker_cisco.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://www.credly.com/badges/17c56069-e62e-47be-9333-72fa7b509330/linked_in_profile" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify
-                                </a>
-                            </div>
+                <!-- Databases and SQL -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/Databases-and-SQL.png" alt="IBM Data Science" class="img-fluid">
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/junior-cybersecurity-analyst-career-path.1.png" alt="Google Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Junior CyberSecurity Analyst</h4>
-                                    <h5 class="text-primary">Cisco</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Comprehensive networking fundamentals and practical skills for network troubleshooting and maintenance.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Vulnerability Management & Risk Analysis</span>
-                                <span class="skill-badge">Network Security Fundamentals</span>
-                                <span class="skill-badge">Malware Analysis & Incident Response</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/junior_cybersecurity_carrier_path.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://www.credly.com/badges/45443287-5b66-4369-aff5-9290ac0b54da/linked_in_profile" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify
-                                </a>
-                            </div>
+                        <div class="project-content">
+                            <!-- <div class="project-category-badge">SQL</div> -->
+                            <h4>Databases and SQL</h4>
+                            <!-- <img src="certifications/logos/IBM-Symbol.jpg" alt="IBM Logo" class="cert-logo"> -->
+                            <p>Completed IBM's Databases and SQL course, focusing on relational databases, SQL queries, and data manipulation.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/Q3E1SPKV14EQ" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Programming -->
-            <div class="certification-category mb-5" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="category-title">
-                    <i class="fas fa-code me-2"></i>Programming
-                </h3>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/hackerrank.png" alt="HackerRank Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Python Programming</h4>
-                                    <h5 class="text-primary">HackerRank</h5>
-                                    <p class="cert-date">2023-2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Learned Python fundamentals through hands-on coding challenges, covering core programming concepts and real-world problem-solving.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Python</span>
-                                <span class="skill-badge">Debugging</span>
-                                <span class="skill-badge">Problem Solving</span>
-                                <span class="skill-badge">Code Optimization</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="https://www.hackerrank.com/certificates/iframe/57612ea138ce" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificates
-                                </a>
-                                <a href="https://www.hackerrank.com/profile/mayur_rastogi_c1" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>View Profile
-                                </a>
-                            </div>
+                <!--Digital Transformation with Google Cloud -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Digital-Transformation-with-Google-Cloud.png" alt="Cloud" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <!-- <div class="project-category-badge">Cloud</div> -->
+                            <h4>Digital Transformation with Google Cloud</h4>
+                            <!-- <img src="certifications/logos/coursera.png" alt="Google Logo" class="cert-logo"> -->
+                            <p>Completed Digital Transformation with Google Cloud course, focusing on cloud technologies and their impact on business.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/8BBYDGW8FRO3" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                            </a>
                         </div>
                     </div>
-                    <!-- <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/academic-logo.png" alt="Academic Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>B.Tech CSE (AI-ML)</h4>
-                                    <h5 class="text-primary">Academic Excellence</h5>
-                                    <p class="cert-date">2022-2026</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Specialized degree in Computer Science with focus on Artificial Intelligence and Machine Learning technologies.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">AI/ML</span>
-                                <span class="skill-badge">Computer Science</span>
-                                <span class="skill-badge">Research</span>
-                                <span class="skill-badge">DSA</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/academic-transcript.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Transcript
-                                </a>
-                                <a href="https://www.linkedin.com/in/MayurRastogi/" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>LinkedIn
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-            </div>
 
-            <!-- Virtual Internship -->
-            <div class="certification-category mb-5" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="category-title">
-                    <i class="fas fa-briefcase me-2"></i>Virtual Internship
-                </h3>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/forage.png" alt="Deloitte Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Data Analytics Job Simulation</h4>
-                                    <h5 class="text-primary">Deloitte Australia</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Practical experience in real-world data analytics projects and business intelligence solutions through virtual internship.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Business Intelligence</span>
-                                <span class="skill-badge">Data Visualization</span>
-                                <span class="skill-badge">Analytics</span>
-                                <span class="skill-badge">Tableau</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/Deloitte_data_completion_certificate.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_5Np3ty3kNyvfrPehG_1751703143320_completion_certificate.pdf" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Program Details
-                                </a>
-                            </div>
+                <!-- Python project for data science -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="data" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Data_Science/Python-project-for-data-science.png" alt="Python Project for Data Science" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <!-- <div class="project-category-badge">Data Science</div> -->
+                            <h4>Python project for data science</h4>
+                            <!-- <img src="certifications/logos/IBM-Symbol.jpg" alt="IBM Logo" class="cert-logo"> -->
+                            <p>Completed a hands-on project for data science using Python, focusing on data analysis and visualization techniques.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/MFN6JUCRYKS8" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/forage.png" alt="Deloitte Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Cyber Job Simulation</h4>
-                                    <h5 class="text-primary">Deloitte Australia</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">A virtual job simulation provided by Deloitte Australia via Forage, where you play the role of a cyber analyst to analyze suspicious activity, prepare a breach response plan, and present findings within a consulting context</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Cybersecurity</span>
-                                <span class="skill-badge">Visualization</span>
-                                <span class="skill-badge">ProblemSolving</span>
-                                <span class="skill-badge">Communication</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/deloitte_completion_certificate.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_5Np3ty3kNyvfrPehG_1751650633341_completion_certificate.pdf" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Program Verification
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div> 
 
-            <!-- Database & Data Science -->
-            <div class="certification-category mb-5" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="category-title">
-                    <i class="fas fa-database me-2"></i>Database & Data Science
-                </h3>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/getting-started-with-enterprise-data-science.2.png" alt="IBM Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Enterprise Data Science</h4>
-                                    <h5 class="text-primary">IBM</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Advanced data science methodologies and enterprise-level data analytics solutions using IBM tools and technologies.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">Data Science</span>
-                                <span class="skill-badge">Machine Learning</span>
-                                <span class="skill-badge">Big Data</span>
-                                <span class="skill-badge">IBM Watson</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/getting-started-with-enterprise-data-science.2.png" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://www.credly.com/badges/43a95e79-ee13-4222-9dfc-43fad3086bdc/linked_in_profile" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify on Credly
-                                </a>
-                            </div>
+                <!-- Python for Data Science, AI & Development -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="python" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Python/Python-for-Data-Science,AI-&-Development.png" alt="Other Certificate" class="img-fluid">
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/mongodb_logo.png" alt="IBM Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>MongoDB</h4>
-                                    <h5 class="text-primary">MongoDB</h5>
-                                    <p class="cert-date">2024</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Gained hands-on experience with MongoDB Atlas, learning to create clusters, perform CRUD operations, and manage cloud-based NoSQL databases.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">MongoDB</span>
-                                <span class="skill-badge">Atlas</span>
-                                <span class="skill-badge">Compass</span>
-                                <span class="skill-badge">CRUD</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/mongodb_atlas.pdf" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://learn.mongodb.com/c/PVn83BbfRz-FomHVoJxlpQ" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify on MongoDB
-                                </a>
-                            </div>
+                        <div class="project-content">
+                            <h4>Python for Data Science, AI & Development</h4>
+                            <p>Completed a comprehensive course on Python for Data Science, AI, and Development, covering key concepts and practical applications.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/5UEVSWSX83IO" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Cloud -->
-            <div class="certification-category mb-5" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="category-title">
-                    <i class="fas fa-cloud me-2"></i>Google Cloud
-                </h3>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/google_cloud_computing.png" alt="Google Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Enterprise Cloud Computing</h4>
-                                    <h5 class="text-primary">Google</h5>
-                                    <p class="cert-date">2023</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Learned the fundamentals of cloud computing with Google Cloud Platform, including infrastructure, services, and deployment of scalable applications</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">CloudComputing</span>
-                                <!-- <span class="skill-badge">GoogleCloudPlatform</span> -->
-                                <span class="skill-badge">ComputeEngine</span>
-                                <span class="skill-badge">CloudStorage</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/google_cloud_computing.png" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://www.credly.com/badges/8d30bffc-abd3-4b08-83df-f4e0b42706e3/linked_in_profile" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify on Google Cloud
-                                </a>
-                            </div>
+                <!-- Tools for Data Science -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="data" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Data_Science/Tools-for-Data-Science.png" alt="Other Certificate" class="img-fluid">
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <div class="certification-card">
-                            <div class="certification-header">
-                                <div class="cert-logo">
-                                    <img src="certifications/cloud_data_for_ml_APIs.png" alt="Google Logo" class="cert-logo-img">
-                                </div>
-                                <div class="cert-info">
-                                    <h4>Cloud Computing</h4>
-                                    <h5 class="text-primary">Google</h5>
-                                    <p class="cert-date">2023</p>
-                                </div>
-                            </div>
-                            <p class="cert-description">Learned to preprocess, clean, and transform data for use with Google Cloud’s Machine Learning APIs to build scalable AI solutions.</p>
-                            <div class="cert-skills">
-                                <span class="skill-badge">GoogleCloud</span>
-                                <span class="skill-badge">MachineLearning</span>
-                                <span class="skill-badge">DataEngineering</span>
-                                <span class="skill-badge">AI</span>
-                            </div>
-                            <div class="cert-actions mt-3">
-                                <a href="certifications/cloud_data_for_ml_APIs.png" target="_blank" class="btn btn-sm btn-outline-primary me-2">
-                                    <i class="fas fa-file-pdf me-1"></i>View Certificate
-                                </a>
-                                <a href="https://www.credly.com/badges/57dfec2b-37fd-45d6-b855-b4e7d2dc9659/linked_in_profile" target="_blank" class="btn btn-sm btn-outline-secondary">
-                                    <i class="fas fa-external-link-alt me-1"></i>Verify on Google Cloud
-                                </a>
-                            </div>
+                        <div class="project-content">
+                            <h4>Tools for Data Science</h4>
+                            <p>Completed a course on the essential tools for data science, including data manipulation, visualization, and machine learning libraries.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/2O3ZHM2NZD5Z" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Connecting to MongoDB -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/connecting_to_mongoDB.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Connecting to MongoDB</h4>
+                            <p>Completed a course on connecting to MongoDB, covering database setup, CRUD operations, and data modeling.</p>
+                            <a href="https://learn.mongodb.com/c/6Sw_xQyRTjyHi421AwUamQ" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cyber Job Simulation -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/Cyber-Job-Simulation.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Cyber Job Simulation</h4>
+                            <p>Completed a job simulation in a cybersecurity environment, gaining hands-on experience with security tools and practices.</p>
+                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_5Np3ty3kNyvfrPehG_1751650633341_completion_certificate.pdf" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analytics Job Simulation -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="data" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Data_Science/data-analytics-job-simulation.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Data Analytics Job Simulation</h4>
+                            <p>Completed a job simulation in data analytics, gaining hands-on experience with data analysis tools and techniques.</p>
+                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_5Np3ty3kNyvfrPehG_1751703143320_completion_certificate.pdf" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technology Job Simulation -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="other" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/More/Technology-Job-Simulation.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Technology Job Simulation</h4>
+                            <p>Completed a job simulation in technology, gaining hands-on experience with various tech tools and methodologies.</p>
+                            <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_5Np3ty3kNyvfrPehG_1751705246509_completion_certificate.pdf" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ethical Hacker -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/Ethical-hacker.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Ethical Hacker</h4>
+                            <p>Earned a certification in ethical hacking, demonstrating skills in penetration testing and security assessment.</p>
+                            <a href="https://www.credly.com/badges/17c56069-e62e-47be-9333-72fa7b509330/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Getting Started with MongoDB Atlas -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/Getting-Started-with-MongoDB-Atlas.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Getting Started with MongoDB Atlas</h4>
+                            <p>Completed a course on MongoDB Atlas, learning about cloud database management and deployment.</p>
+                            <a href="https://learn.mongodb.com/c/PVn83BbfRz-FomHVoJxlpQ" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Introduction to MongoDB(For Students) -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/Introduction-to-MongoDB(For-Students).png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Introduction to MongoDB(For Students)</h4>
+                            <p>Completed a course on MongoDB, gaining foundational knowledge in NoSQL databases and data modeling.</p>
+                            <a href="https://learn.mongodb.com/c/Wi4hUY-wSKmbJUHUI6sq2A" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Junior Cybersecurity Analyst Career Path -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/Junior-Cybersecurity-Analyst-Career-Path.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Junior Cybersecurity Analyst Career Path</h4>
+                            <p>Completed a comprehensive program to kickstart a career in cybersecurity, covering essential skills and knowledge.</p>
+                            <a href="https://www.credly.com/badges/45443287-5b66-4369-aff5-9290ac0b54da/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Aggregation -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-Aggregation.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB Aggregation</h4>
+                            <p>Completed a course on MongoDB Aggregation Framework, enhancing skills in data aggregation and analysis.</p>
+                            <a href="https://learn.mongodb.com/c/zghP9imPTI2sZEOtWXz54g" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB CRUD Operations -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-CRUD-Operations.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB CRUD Operations: Insert and Find Documents</h4>
+                            <p>Completed a course on MongoDB CRUD Operations, focusing on inserting and finding documents within a MongoDB database.</p>
+                            <a href="https://learn.mongodb.com/c/o5jEAAaqQjCYewt2sr8QFw" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Atlas Search -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-Atlas-Search.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB Atlas Search</h4>
+                            <p>Completed a course on MongoDB Atlas Search, enhancing skills in search functionality and optimization.</p>
+                            <a href="https://learn.mongodb.com/c/o5jEAAaqQjCYewt2sr8QFw" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB CRUD Operations: Modifying Query Results -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-CRUD-Operations-Modifying-Query-Results.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB CRUD Operations: Modifying Query Results</h4>
+                            <p>Completed a course on MongoDB CRUD Operations, focusing on modifying query results within a MongoDB database.</p>
+                            <a href="https://learn.mongodb.com/c/TvISdJN3SiOpmu1ZzriujA" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB CRUD Operations: Replace and Delete Documents -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-CRUD-Operations-Replace-and-Delete-Documents.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB CRUD Operations: Replace and Delete Documents</h4>
+                            <p>Completed a course on MongoDB CRUD Operations, focusing on replacing and deleting documents within a MongoDB database.</p>
+                            <a href="https://learn.mongodb.com/c/bsSaytGhT_O533JLNauPpQ" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Data Modeling Intro -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-Data-Modeling-Intro.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB Data Modeling Intro</h4>
+                            <p>Completed a course on MongoDB Data Modeling, focusing on designing and optimizing data models for MongoDB.</p>
+                            <a href="https://learn.mongodb.com/c/oXV2m03ARt-NkuM7Kq5A8w" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Indexes -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-Indexes.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB Indexes</h4>
+                            <p>Completed a course on MongoDB Indexes, focusing on creating and managing indexes to optimize query performance.</p>
+                            <a href="https://learn.mongodb.com/c/Ws-k7riERbSrjbiJBm_yNg" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB Transactions -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-Transactions.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB Transactions</h4>
+                            <p>Completed a course on MongoDB Transactions, focusing on managing multi-document transactions in MongoDB.</p>
+                            <a href="https://learn.mongodb.com/c/yLOjZvSBSAu5XIaRrGmTAA" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MongoDB and the Document Model -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="database" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Database/MongoDB-and-the-Document-Model.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>MongoDB and the Document Model</h4>
+                            <p>Completed a course on MongoDB and the Document Model, focusing on the principles of document-based data storage.</p>
+                            <a href="https://learn.mongodb.com/c/GAejkMYhTV26MPVrIlCe2w" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Technician Career Path -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/networking-essentials.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Network Technician Career Path</h4>
+                            <p>Completed a course on the Network Technician Career Path, focusing on the skills and knowledge required for a career in network technology.</p>
+                            <a href="https://www.credly.com/badges/730d7b9b-f192-4b6b-ba0d-650090f9fd10/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--What is Data Science? -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="data" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Data_Science/What-is-Data-Science.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>What is Data Science?</h4>
+                            <p>Completed a course on What is Data Science?, focusing on the fundamental concepts and techniques used in data science.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/9ONGD5WFMAZL" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ace -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="other" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/More/ace.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>badge</h4>
+                            <p>Badge for completing 25 quiz resources</p>
+                            <a href="https://gameconfig.onwingspan.com/Gamification/GetBadgeImage/?AppId=53243&TokenNo=O55WBL7J2F&BadgeCode=5W5G76DYM6" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Getting Started with Microsoft Excel -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="other" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/More/Getting-Started-with-Microsoft-Excel.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Getting Started with Microsoft Excel</h4>
+                            <p>Completed a course on Getting Started with Microsoft Excel, focusing on the fundamental features and functions of Excel.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/U817NXL6GTVA" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Introduction to Cybersecurity -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/Introduction-to-Cybersecurity.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Introduction to Cybersecurity</h4>
+                            <p>Completed a course on Introduction to Cybersecurity, covering essential concepts and practices to secure networks and systems.</p>
+                            <a href="https://www.credly.com/badges/4ac82c3a-7953-48f3-bd2b-8318a3264e5f/public_url" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Introduction to Programming Using Python -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="python" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Python/Introduction-to-programming-using-python.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Introduction to Programming Using Python</h4>
+                            <p>Completed a course on Introduction to Programming Using Python, covering the basics of programming and problem-solving using Python.</p>
+                            <a href="https://www.hackerrank.com/certificates/iframe/57612ea138ce" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Build a Secure Google Cloud Network Skill Badge -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Build-a-Secure-Google-Cloud-Network-Skill-Badge.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Build a Secure Google Cloud Network Skill Badge</h4>
+                            <p>Completed a course on building secure networks in Google Cloud, focusing on best practices and security measures.</p>
+                            <a href="https://www.credly.com/badges/a3801a7a-f92a-465a-be31-ff84094f0422/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Cloud Computing Foundations Certificate -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Google-Cloud-Computing-Foundations-Certificate.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Google Cloud Computing Foundations Certificate</h4>
+                            <p>Completed a course on Google Cloud Computing Foundations, covering the basics of cloud computing and Google Cloud services.</p>
+                            <a href="https://www.credly.com/badges/8d30bffc-abd3-4b08-83df-f4e0b42706e3/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud ML Certificate -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Implement-Load-Balancing-on-Compute-Engine-Skill-Badge.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Implement Load Balancing on Compute Engine Skill Badge</h4>
+                            <p>Completed a course on implementing load balancing in Google Cloud's Compute Engine, focusing on best practices and configuration.</p>
+                            <a href="https://www.credly.com/badges/0f3ba19a-23cf-4846-94a5-fa88d7288131/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prepare Data for ML APIs on Google Cloud Skill Badge -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Prepare-Data-for-ML-APIs-on-Google-Cloud-Skill-Badge.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Prepare Data for ML APIs on Google Cloud Skill Badge</h4>
+                            <p>Completed a course on preparing data for machine learning APIs on Google Cloud, focusing on data preprocessing and transformation techniques.</p>
+                            <a href="https://www.credly.com/badges/57dfec2b-37fd-45d6-b855-b4e7d2dc9659/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Set Up an App Dev Environment on Google Cloud Skills Badge -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cloud" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cloud/Set-Up-an-App-Dev-Environment-on-Google-Cloud-Skills-Badge.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Set Up an App Dev Environment on Google Cloud Skills Badge</h4>
+                            <p>Completed a course on setting up a development environment on Google Cloud, focusing on best practices and configuration.</p>
+                            <a href="https://www.credly.com/badges/a202d8f9-2419-480f-b1de-2b863981d29a/linked_in_profile" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud ML Certificate -->
+                <div class="col-lg-4 col-md-6 mb-4 certification-item" data-category="cyber" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="certifications/Cyber_Security/Foundation-to-cybersecurity.png" alt="Other Certificate" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h4>Foundations of Cybersecurity</h4>
+                            <p>Completed a course on the fundamentals of cybersecurity, covering key concepts and best practices.</p>
+                            <a href="https://www.coursera.org/account/accomplishments/verify/LDVNBQDGXQ7W?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="btn btn-light btn-sm mt-2">
+                                <i class="fas fa-external-link-alt me-2"></i>View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             <!-- More Certifications -->
             <div class="text-center" data-aos="fade-up" data-aos-delay="400">
@@ -494,6 +765,24 @@
                     });
                 }
             });
+        });
+
+        // Category filtering for certifications
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const certItems = document.querySelectorAll('.certification-item');
+        categoryBtns.forEach(btn => {
+          btn.addEventListener('click', function () {
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const selected = this.getAttribute('data-category');
+            certItems.forEach(item => {
+              if (selected === 'all' || item.getAttribute('data-category') === selected) {
+                item.style.display = '';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
         });
     </script>
 </body>

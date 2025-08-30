@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mayur Rastogi</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Mayur Rastogi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">Certifications</a>
+                    </li>
+                </ul>
+
+                <!-- Dark Mode Toggle -->
+                <div class="theme-toggle">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <i class="fas fa-sun" id="theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light" style="padding-top: 120px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title text-center mb-5" data-aos="fade-up">Project Categories</h2>
+                </div>
+            </div>
+
+            <!-- Category Navigation -->
+            <div class="row mb-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="project-categories text-center">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                            <button class="btn btn-outline-primary category-btn active" data-category="all">
+                                <i class="fas fa-th me-2"></i>All Projects
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="web">
+                                <i class="fas fa-globe me-2"></i>Web Development
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="android">
+                                <i class="fab fa-android me-2"></i>Android Development
+                            </button>
+                            <!-- <button class="btn btn-outline-primary category-btn" data-category="data">
+                                <i class="fas fa-chart-bar me-2"></i>Data Analysis
+                            </button> -->
+                            <button class="btn btn-outline-primary category-btn" data-category="python">
+                                <i class="fab fa-python me-2"></i>Python Scripting
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="dsa">
+                                <i class="fas fa-project-diagram me-2"></i>Data Structure
+                            </button>
+                            <button class="btn btn-outline-primary category-btn" data-category="cs">
+                                <i class="fas fa-code me-2"></i>Cyber Security
+                            </button>
+                            <!-- <button class="btn btn-outline-primary category-btn" data-category="other">
+                                <i class="fas fa-code me-2"></i>Other Projects
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row" id="projects-grid">
+                <!-- Library Hub -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/library_hub.png" alt="Library Hub" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://mayurrastogiji.github.io/Library-Management/" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/MayurRastogiji/Library-Management" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Web Development</div>
+                            <h4>Library Hub</h4>
+                            <p>A centralized platform for accessing academic resources including notes, assignments, question papers, and reference books. Features organized content by subject and academic year.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chatting App -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="python" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/chatting_app.png" alt="Chatting App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <!-- <a href="https://mayurrastogiji.github.io/Library-Management/" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a> -->
+                                    <a href="https://github.com/MayurRastogiji/basic_projects/tree/main/python/chatting%20app/group%20chat" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Python Scripting</div>
+                            <h4>Chatting App</h4>
+                            <p>A group chatting application built with Python, allowing users to create and join chat rooms, send messages, their joining and leaving messages will be displayed in the chat.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Socket</span>
+                                <span class="tech-tag">Threading</span>
+                                <!-- <span class="tech-tag">logic building</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-user-circle" style="font-size: 4rem; color: #007bff;"></i> -->
+                                 <img src="images/Portfolio.png" alt="Personal Portfolio">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://mayurrastogiji.github.io/portfolio/" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/MayurRastogiji/portfolio" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Web Development</div>
+                            <h4>Personal Portfolio</h4>
+                            <p>Modern, responsive portfolio website showcasing skills, projects, and experience. Features dark/light themes, animations, and mobile optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Structures in Python -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="dsa" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-user-circle" style="font-size: 4rem; color: #007bff;"></i> -->
+                                 <img src="images/DS_Python.png" alt="Data Structures in Python">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <!-- <a href="https://mayurrastogiji.github.io/portfolio/" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a> -->
+                                    <a href="https://github.com/MayurRastogiji/Data-Structure/tree/main/Python" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Data Structure</div>
+                            <h4>Data Structures in Python</h4>
+                            <p>A comprehensive guide to data structures in Python, covering lists, dictionaries, sets, and more. Includes Documentary and interactive examples.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">DSA</span>
+                                <span class="tech-tag">Python</span>
+                                <!-- <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap 5</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Games In python -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="python" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/python_games.png" alt="Python Games" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/games_in_python/" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Python Scripting</div>
+                            <h4>Games in Python</h4>
+                            <p>Interactive gaming suite with user management system featuring secure data handling, password recovery, OTP authentication, and communication features.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">smtplib</span>
+                                <span class="tech-tag">pywhatkit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bus Safe -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="android" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/bus_safe.jpg" alt="Bus Safe" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/Android_Applications/tree/main/BusSafe" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Android Development</div>
+                            <h4>Bus Safe</h4>
+                            <p>Android application for tracking bus routes and student attendance with fingerprint authentication for enhanced security and real-time monitoring.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">XML</span>
+                                <span class="tech-tag">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password Generator -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="cs" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/Password_generator.png" alt="Password Generator" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/basic_projects/tree/main/python/password%20generator" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Python Scripting</div>
+                            <h4>Password Generator</h4>
+                            <p>A simple Python script that Checks and generates random passwords with customizable length and complexity.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Random</span>
+                                <span class="tech-tag">String</span>
+                                <!-- <span class="tech-tag">Tkinter</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis Projects -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="data" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line" style="font-size: 4rem; color: #28a745;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji?tab=repositories&q=data&type=&language=&sort=" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Data Analysis</div>
+                            <h4>Data Analytics Projects</h4>
+                            <p>Collection of data analysis projects using Python, Excel, and visualization tools to extract insights from various datasets and create interactive dashboards.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Tableau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- RSA IN Python -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="cs" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-chart-line" style="font-size: 4rem; color: #28a745;"></i> -->
+                                 <img src="images/RSA.png" alt="RSA Algorithm" class="img-fluid">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/basic_projects/blob/main/python/basic_RSA.py" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Cryptography</div>
+                            <h4>RSA Algorithm Implementation</h4>
+                            <p>Implementation of the RSA algorithm for secure data transmission. This project demonstrates key generation, encryption, and decryption processes.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Random</span>
+                                <span class="tech-tag">Logic</span>
+                                <!-- <span class="tech-tag">Tableau</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Youtube Video Downloader -->
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fas fa-user-circle" style="font-size: 4rem; color: #007bff;"></i> -->
+                                 <img src="images/youtube_video_downloader.png" alt="Personal Portfolio">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <!-- <a href="https://mayurrastogiji.github.io/portfolio/" target="_blank" class="btn btn-light btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a> -->
+                                    <a href="https://github.com/MayurRastogiji/basic_projects/tree/main/webpages/youtube_downloader" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Web Development</div>
+                            <h4>Youtube Video Downloader</h4>
+                            <p>Modern, responsive web application for downloading YouTube videos. Features include video search, highest quality downloads, and user-friendly interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Python</span>
+                                <!-- <span class="tech-tag">Bootstrap 5</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Structure Projects -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="dsa" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code-branch" style="font-size: 4rem; color: #17a2b8;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji?tab=repositories&q=data+structure&type=&language=&sort=" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Data Structure</div>
+                            <h4>DSA Implementation</h4>
+                            <p>Comprehensive collection of data structures and algorithms implementations including linked lists, trees, graphs, sorting algorithms, and problem-solving solutions.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- More Projects -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="python" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-robot" style="font-size: 4rem; color: #6f42c1;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji?tab=repositories&q=automation&type=&language=python&sort=" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Python Scripting</div>
+                            <h4>Automation Scripts</h4>
+                            <p>Various Python automation scripts for daily tasks, web scraping, file management, and system administration to improve productivity and efficiency.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Selenium</span>
+                                <span class="tech-tag">BeautifulSoup</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="android" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fab fa-android" style="font-size: 4rem; color: #3ddc84;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/Android_Applications/" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Android Development</div>
+                            <h4>Android App Collection</h4>
+                            <p>Various Android applications including utility apps, TicTacToe, and Call Book built with modern Android development practices.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Android Studio</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">XML</span>
+                                <!-- <span class="tech-tag">Firebase</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="dsa" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <!-- <i class="fab fa-android" style="font-size: 4rem; color: #3ddc84;"></i> -->
+                                 <img src="images/DSA_in_C.png" alt="DSA in C" class="img-fluid">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji/basic_projects/tree/main/c/DSA" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Data Structure</div>
+                            <h4>DSA in C</h4>
+                            <p>Data Structures and Algorithms implemented in C, covering various concepts and techniques.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C</span>
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <!-- <span class="tech-tag">Firebase</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="other" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-database" style="font-size: 4rem; color: #dc3545;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji?tab=repositories&q=database&type=&language=&sort=" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Other Projects</div>
+                            <h4>Database Projects</h4>
+                            <p>Database design and management projects showcasing skills in SQL, database optimization, and data modeling for various applications.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col-lg-4 col-md-6 mb-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="800">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart" style="font-size: 4rem; color: #fd7e14;"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/MayurRastogiji?tab=repositories&q=web&type=&language=&sort=" target="_blank" class="btn btn-light btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category-badge">Web Development</div>
+                            <h4>E-commerce & Business Sites</h4>
+                            <p>Professional websites and e-commerce platforms with modern UI/UX, responsive design, and integrated payment systems.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- GitHub CTA Section -->
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <div class="github-cta-section">
+                        <div class="github-cta-icon mb-3">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3 class="mb-3">Explore More on GitHub</h3>
+                        <p class="text-muted mb-4">
+                            Visit my GitHub profile to discover 30+ repositories across multiple technologies.
+                            Each project includes detailed documentation, source code, and implementation details.
+                        </p>
+                        <div class="github-stats mb-4">
+                            <div class="row">
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <h4 class="stat-number">30+</h4>
+                                        <p class="stat-label">Repositories</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <h4 class="stat-number">10+</h4>
+                                        <p class="stat-label">Technologies</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <h4 class="stat-number">5+</h4>
+                                        <p class="stat-label">Project Categories</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="stat-item">
+                                        <h4 class="stat-number">3+</h4>
+                                        <p class="stat-label">Years Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="github-buttons">
+                            <a href="https://github.com/MayurRastogiji?tab=repositories" target="_blank" class="btn btn-lg me-3 mb-2 github-btn">
+                                <i class="fab fa-github me-2"></i>View All Repositories
+                            </a>
+                            <a href="https://github.com/MayurRastogiji" target="_blank" class="btn btn-lg mb-2 github-btn">
+                                <i class="fas fa-user me-2"></i>GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Mayur Rastogi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Dark theme toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const currentTheme = localStorage.getItem('theme') || 'light';
+
+        // Apply saved theme on page load
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-theme');
+            themeIcon.className = 'fas fa-moon';
+        }
+
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function () {
+            body.classList.toggle('dark-theme');
+
+            if (body.classList.contains('dark-theme')) {
+                themeIcon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        // Project filtering
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+
+                projectItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                        // Re-trigger AOS animation
+                        item.classList.add('aos-animate');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
